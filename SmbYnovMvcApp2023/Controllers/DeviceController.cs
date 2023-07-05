@@ -39,9 +39,6 @@ namespace SmbYnovMvcApp2023.Controllers
             var dateTempSoil = listTempSoil.Select(s=> s.TimeSeriesName).ToList();
             var valueTempSoil = listTempSoil.Select(s => s.Value).ToList();
 
-            var dateDevices = devices.Select(s=> s.TimeSeriesName).ToList();
-            var valueDevices = devices.Select(s => s.Value).ToList();
-
             var dataToDisplay = new DataToDisplay
             {
                 dateWater=dateWater,
