@@ -8,5 +8,6 @@
             chartType: "Line",
             yValues: new[] { Model.valueCond },
             xValues: new[] { Model.dateCond })
-        .Write();
+        .GetBytes("png");
+            return File(myChart, "image/png");
 }
