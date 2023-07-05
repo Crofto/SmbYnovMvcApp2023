@@ -48,10 +48,7 @@ namespace SmbYnovMvcApp2023.Controllers
                 valueCond=valueCond,
 
                 dateTempSoil=dateTempSoil,
-                valueTempSoil=valueTempSoil,
-
-                dateDevices=dateDevices,
-                valueDevices=valueDevices
+                valueTempSoil=valueTempSoil
             };
             return View(dataToDisplay);
         }
