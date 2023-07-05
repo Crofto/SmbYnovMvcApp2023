@@ -1,12 +1,12 @@
 @model DataToDisplay
 
 @{
-    var myChart = new Chart(width: 600, height: 400)
+    var myChart = new  System.Web.Helpers.Chart(width: 600, height: 400)
         .AddTitle("Humidite")
         .AddSeries(
             name: "Humidite",
             chartType: "Line",
             yValues: new[] { Model.valueWater },
-            xValues: new[] { Model.dateWater })
+            xValue: new[] { Model.dateWater })
         .Write();
 }

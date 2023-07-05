@@ -2,12 +2,12 @@
 {
     public class DataToDisplay
     {
-        public List<DateTimeOffSet> dateWater { get; set; } = new List<DateTimeOffSet>();
-        public List<DateTimeOffSet> dateCond { get; set; } = new List<DateTimeOffSet>();
-        public List<DateTimeOffSet> dateTempSoil { get; set; } = new List<DateTimeOffSet>();
+        public List<DateTimeOffset> dateWater { get; set; } = new List<DateTimeOffset>();
+        public List<DateTimeOffset> dateCond { get; set; } = new List<DateTimeOffset>();
+        public List<DateTimeOffset> dateTempSoil { get; set; } = new List<DateTimeOffset>();
 
-        public List<Float> valueWater { get; set; } = new List<Float>();
-        public List<Float> valueCond { get; set; } = new List<Float>();
-        public List<Float> valueTempSoil { get; set; } = new List<Float>();
+        public List<float> valueWater { get; set; } = new List<float>();
+        public List<float> valueCond { get; set; } = new List<float>();
+        public List<float> valueTempSoil { get; set; } = new List<float>();
     }
 }

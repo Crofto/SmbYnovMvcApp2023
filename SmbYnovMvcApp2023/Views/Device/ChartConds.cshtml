@@ -1,12 +1,12 @@
 @model DataToDisplay
 
 @{
-    var myChart = new Chart(width: 600, height: 400)
+    var myChart = new System.Web.Helpers.Chart(width: 600, height: 400)
         .AddTitle("Condensation")
         .AddSeries(
             name: "Condensation",
             chartType: "Line",
             yValues: new[] { Model.valueCond },
-            xValues: new[] { Model.dateCond })
+            xValue: new[] { Model.dateCond })
         .Write();
 }

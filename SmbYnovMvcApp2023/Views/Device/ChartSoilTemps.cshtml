@@ -1,12 +1,12 @@
 @model DataToDisplay
 
 @{
-    var myChart = new Chart(width: 600, height: 400)
+    var myChart = new  System.Web.Helpers.Chart(width: 600, height: 400)
         .AddTitle("Temp sol")
         .AddSeries(
             name: "Temp sol",
             chartType: "Line",
             yValues: new[] { Model.valueTempSoil },
-            xValues: new[] { Model.dateTempSoil })
+            xValue: new[] { Model.dateTempSoil })
         .Write();
 }

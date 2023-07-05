@@ -30,13 +30,13 @@ namespace SmbYnovMvcApp2023.Controllers
             var listCond = _dbContext.TimeSeries.Where(ts => ts.TimeSeriesName == K_TIME_SERIES_SOIL_CONDUCTIVITY).ToList();
             var listTempSoil = _dbContext.TimeSeries.Where(ts => ts.TimeSeriesName == K_TIME_SERIES_SOIL_TEMPERATURE).ToList();
 
-            var dateWater = listWater.Select(s=> s.TimeSeriesName).ToList();
+            var dateWater = listWater.Select(s=> s.DateTimeOffset).ToList();
             var valueWater = listWater.Select(s => s.Value).ToList();
 
-            var dateCond = listCond.Select(s=> s.TimeSeriesName).ToList();
+            var dateCond = listCond.Select(s=> s.DateTimeOffset).ToList();
             var valueCond = listCond.Select(s => s.Value).ToList();
 
-            var dateTempSoil = listTempSoil.Select(s=> s.TimeSeriesName).ToList();
+            var dateTempSoil = listTempSoil.Select(s=> s.DateTimeOffset).ToList();
             var valueTempSoil = listTempSoil.Select(s => s.Value).ToList();
 
             var dataToDisplay = new DataToDisplay
