@@ -1,0 +1,57 @@
+﻿@model DataToDisplay
+
+<h1>Humidité</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var row in Model.waters )
+        {
+            <tr>
+                <td>@row.DateTimeOffset</td>
+                <td>@row.Value</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<h1>Conductivité</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var row in Model.conds )
+        {
+            <tr>
+                <td>@row.DateTimeOffset</td>
+                <td>@row.Value</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<h1>Température du sol</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var row in Model.soilTemps )
+        {
+            <tr>
+                <td>@row.DateTimeOffset.ToString("dd/MM/yyyy HH':'mm")</td>
+                <td>@row.Value</td>
+            </tr>
+        }
+    </tbody>
+</table>
